@@ -216,9 +216,9 @@
       bottom: 120px;
     }
   
-    .icon1 { top: -100px; left: 400px; }
-    .icon2 { top: -80px; left: 350px; }
-    .icon3 { top: -60px; left: 300px; }
-    .icon4 { bottom: 150px; left: 350px; }
+    .icon1 { top: 110px; left: 220px; }
+    .icon2 { top: 110px; left: 170px; }
+    .icon3 { top: 140px; left: 120px; }
+    .icon4 { bottom: 40px; left: 240px; }
   }
   
