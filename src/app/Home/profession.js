@@ -1,16 +1,17 @@
-'use client';
-import React from 'react';
-import Image from 'next/image';
+"use client";
+import React from "react";
+import Image from "next/image";
 
 const Profession = () => {
   return (
     <section
       className="container-fluid py-5 pt-md-5 pt-4"
       style={{
-        background: 'linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253))',
-        minHeight: '85vh', // Reduced from 100vh to 85vh
-        display: 'flex',
-        alignItems: 'center',
+        background:
+          "linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253))",
+        minHeight: "85vh", // Reduced from 100vh to 85vh
+        display: "flex",
+        alignItems: "center",
       }}
     >
       <div className="container d-flex flex-wrap align-items-center justify-content-between">
@@ -22,7 +23,7 @@ const Profession = () => {
             width={550}
             height={500}
             className="img-fluid"
-            style={{ objectFit: 'contain' }}
+            style={{ objectFit: "contain" }}
           />
         </div>
 
@@ -34,14 +35,14 @@ const Profession = () => {
           <p className="text-secondary mb-4 fs-6">
             Morbi tempor eleifend condimentum. Etiam mollis urna et massa tempus
             vulputate. Nunc sed nisl est. Donec non consectetur elit. Praesent
-            accumsan elit urna, eget mattis turpis aliquam a. In sagittis bibendum
-            consequat.
+            accumsan elit urna, eget mattis turpis aliquam a. In sagittis
+            bibendum consequat.
           </p>
           <button
             className="btn px-4 py-2 rounded-pill fw-semibold border-0"
             style={{
-              background: 'linear-gradient(to right, #ff416c, #ff4b2b)',
-              color: 'white',
+              background: "linear-gradient(to right, #ff416c, #ff4b2b)",
+              color: "white",
             }}
           >
             TRY FOR FREE

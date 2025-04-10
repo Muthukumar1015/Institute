@@ -1,6 +1,6 @@
-'use client';
-import Image from 'next/image';
-import { FaCheckCircle, FaStar } from 'react-icons/fa';
+"use client";
+import Image from "next/image";
+import { FaCheckCircle, FaStar } from "react-icons/fa";
 
 const HowItWorksSection = () => {
   return (
@@ -25,26 +25,52 @@ const HowItWorksSection = () => {
                   <h2 className="fw-bold mb-4">How does it work?</h2>
 
                   <div className="mb-4 d-flex align-items-start">
-                    <FaCheckCircle className="text-danger me-3 mt-1" size={18} />
+                    <FaCheckCircle
+                      className="text-danger me-3 mt-1"
+                      size={18}
+                    />
                     <div>
-                      <h5 className="fw-bold mb-1">4 on-line lectures with a teacher</h5>
-                      <p className="mb-0">Quisque eget porta mauris. Praesent eu tincidunt nulla, suscipit lobortis est.</p>
+                      <h5 className="fw-bold mb-1">
+                        4 on-line lectures with a teacher
+                      </h5>
+                      <p className="mb-0">
+                        Quisque eget porta mauris. Praesent eu tincidunt nulla,
+                        suscipit lobortis est.
+                      </p>
                     </div>
                   </div>
 
                   <div className="mb-4 d-flex align-items-start">
-                    <FaCheckCircle className="text-danger me-3 mt-1" size={18} />
+                    <FaCheckCircle
+                      className="text-danger me-3 mt-1"
+                      size={18}
+                    />
                     <div>
-                      <h5 className="fw-bold mb-1">Subscription gives access to education materials and videos</h5>
-                      <p className="mb-0">Quisque eget porta mauris. Praesent eu tincidunt nulla, suscipit lobortis est.</p>
+                      <h5 className="fw-bold mb-1">
+                        Subscription gives access to education materials and
+                        videos
+                      </h5>
+                      <p className="mb-0">
+                        Quisque eget porta mauris. Praesent eu tincidunt nulla,
+                        suscipit lobortis est.
+                      </p>
                     </div>
                   </div>
 
                   <div className="d-flex align-items-start">
-                    <FaCheckCircle className="text-danger me-3 mt-1" size={18} />
+                    <FaCheckCircle
+                      className="text-danger me-3 mt-1"
+                      size={18}
+                    />
                     <div>
-                      <h5 className="fw-bold mb-1">After completing the course and tasks, you’ll receive a certificate</h5>
-                      <p className="mb-0">Quisque eget porta mauris. Praesent eu tincidunt nulla, suscipit lobortis est.</p>
+                      <h5 className="fw-bold mb-1">
+                        After completing the course and tasks, you’ll receive a
+                        certificate
+                      </h5>
+                      <p className="mb-0">
+                        Quisque eget porta mauris. Praesent eu tincidunt nulla,
+                        suscipit lobortis est.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -67,7 +93,9 @@ const HowItWorksSection = () => {
                 ))}
               </div>
               <p className="fst-italic text-muted small mb-0">
-                “Mauris tellus lorem, tempus sed nibh at, varius convallis mi. Sed scelerisque odio neque a lacus. Ut consectetur ligula. Ed rhoncus sapien eget feugiat.”
+                “Mauris tellus lorem, tempus sed nibh at, varius convallis mi.
+                Sed scelerisque odio neque a lacus. Ut consectetur ligula. Ed
+                rhoncus sapien eget feugiat.”
               </p>
             </div>
           </div>
@@ -77,7 +105,11 @@ const HowItWorksSection = () => {
       {/* Internal CSS */}
       <style jsx>{`
         .how-it-works-section {
-          background: linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253));
+          background: linear-gradient(
+            90deg,
+            rgb(219, 198, 248),
+            rgb(217, 230, 253)
+          );
         }
 
         .gradient-box {

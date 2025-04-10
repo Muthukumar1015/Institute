@@ -1,49 +1,49 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { FaCode, FaHtml5, FaLaptopCode } from 'react-icons/fa';
+import React from "react";
+import { FaCode, FaHtml5, FaLaptopCode } from "react-icons/fa";
 
 const courseData = [
   {
     id: 1,
-    title: 'Computer Programming Basic',
+    title: "Computer Programming Basic",
     icon: <FaCode size={22} color="#fff" />,
-    iconBg: 'bg-gradient-purple',
+    iconBg: "bg-gradient-purple",
     rating: 5,
-    author: 'by Adrian Dawson school',
-    lectures: '48 lectures (280 Hours)',
-    price: '$120 all course / $20 per month',
+    author: "by Adrian Dawson school",
+    lectures: "48 lectures (280 Hours)",
+    price: "$120 all course / $20 per month",
     features: [
-      'Mauris tellus lorem, tempus sed nibh at, varius convallis mi',
-      'Aenean sodales enim, et consequat velit. Morbi sit amet lorem sapien',
+      "Mauris tellus lorem, tempus sed nibh at, varius convallis mi",
+      "Aenean sodales enim, et consequat velit. Morbi sit amet lorem sapien",
     ],
   },
   {
     id: 2,
-    title: 'Computer CSS3 Programming',
+    title: "Computer CSS3 Programming",
     icon: <FaHtml5 size={22} color="#fff" />,
-    iconBg: 'bg-gradient-orange',
+    iconBg: "bg-gradient-orange",
     rating: 5,
-    author: 'by Adrian Dawson school',
-    lectures: '48 lectures (280 Hours)',
-    price: '$120 all course / $20 per month',
+    author: "by Adrian Dawson school",
+    lectures: "48 lectures (280 Hours)",
+    price: "$120 all course / $20 per month",
     features: [
-      'Mauris tellus lorem, tempus sed nibh at, varius convallis mi',
-      'Aenean sodales enim, et consequat velit. Morbi sit amet lorem sapien',
+      "Mauris tellus lorem, tempus sed nibh at, varius convallis mi",
+      "Aenean sodales enim, et consequat velit. Morbi sit amet lorem sapien",
     ],
   },
   {
     id: 3,
-    title: 'Web-site Development Pro',
+    title: "Web-site Development Pro",
     icon: <FaLaptopCode size={22} color="#fff" />,
-    iconBg: 'bg-gradient-blue',
+    iconBg: "bg-gradient-blue",
     rating: 5,
-    author: 'by Adrian Dawson school',
-    lectures: '48 lectures (280 Hours)',
-    price: '$120 all course / $20 per month',
+    author: "by Adrian Dawson school",
+    lectures: "48 lectures (280 Hours)",
+    price: "$120 all course / $20 per month",
     features: [
-      'Mauris tellus lorem, tempus sed nibh at, varius convallis mi',
-      'Aenean sodales enim, et consequat velit. Morbi sit amet lorem sapien',
+      "Mauris tellus lorem, tempus sed nibh at, varius convallis mi",
+      "Aenean sodales enim, et consequat velit. Morbi sit amet lorem sapien",
     ],
   },
 ];
@@ -55,25 +55,28 @@ const PopularCourses = () => {
         <div className="text-center mb-5">
           <h2 className="fw-bold fs-3 fs-md-2">Popular courses</h2>
           <p className="text-muted">
-            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Fusce faucibus nulla sed finibus egestas.
-            Vestibulum purus magna.
+            Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Fusce
+            faucibus nulla sed finibus egestas. Vestibulum purus magna.
           </p>
         </div>
 
         <div className="d-flex justify-content-center flex-wrap gap-4">
-          {courseData.map(course => (
+          {courseData.map((course) => (
             <div key={course.id} className="custom-card text-start">
               <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center mb-3">
-                <div className={`icon-box ${course.iconBg}`}>
-                  {course.icon}
-                </div>
+                <div className={`icon-box ${course.iconBg}`}>{course.icon}</div>
                 <div className="ms-0 ms-md-3 mt-2 mt-md-0">
                   <h6 className="mb-1 fw-bold">{course.title}</h6>
                   <div className="text-warning small">
-                    {'★'.repeat(course.rating)}<span className="text-muted">{'☆'.repeat(5 - course.rating)}</span>
+                    {"★".repeat(course.rating)}
+                    <span className="text-muted">
+                      {"☆".repeat(5 - course.rating)}
+                    </span>
                   </div>
                   <small className="text-muted d-block">{course.author}</small>
-                  <small className="text-primary fw-semibold">{course.lectures}</small>
+                  <small className="text-primary fw-semibold">
+                    {course.lectures}
+                  </small>
                 </div>
               </div>
 
@@ -83,7 +86,9 @@ const PopularCourses = () => {
 
               <ul className="mt-3 ps-3">
                 {course.features.map((feat, idx) => (
-                  <li key={idx} className="small text-muted">{feat}</li>
+                  <li key={idx} className="small text-muted">
+                    {feat}
+                  </li>
                 ))}
               </ul>
 
@@ -103,7 +108,11 @@ const PopularCourses = () => {
 
       <style jsx>{`
         .popular-courses-wrapper {
-          background: linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253));
+          background: linear-gradient(
+            90deg,
+            rgb(219, 198, 248),
+            rgb(217, 230, 253)
+          );
           padding: 60px 20px;
         }
         .custom-card {

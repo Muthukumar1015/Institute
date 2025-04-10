@@ -1,24 +1,24 @@
-'use client';
-import { FaGraduationCap, FaGlobe, FaHeadphones } from 'react-icons/fa';
+"use client";
+import { FaGraduationCap, FaGlobe, FaHeadphones } from "react-icons/fa";
 
 const features = [
   {
     icon: <FaGraduationCap size={28} />,
-    title: 'Get a certificate',
+    title: "Get a certificate",
     description:
-      'Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem tempus rhoncus sit tortor.',
+      "Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem tempus rhoncus sit tortor.",
   },
   {
     icon: <FaGlobe size={28} />,
-    title: 'All over the globe',
+    title: "All over the globe",
     description:
-      'Donec urna massa, cursus venenatis ipsum et, tempus rhoncus tortor. Lorem ipsum dolor.',
+      "Donec urna massa, cursus venenatis ipsum et, tempus rhoncus tortor. Lorem ipsum dolor.",
   },
   {
     icon: <FaHeadphones size={28} />,
-    title: 'Live online lectures',
+    title: "Live online lectures",
     description:
-      'Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem ipsum dolor sit lorem amet.',
+      "Sed a eros sodales diam sagittis faucibus. Cras id erat nisl. Lorem ipsum dolor sit lorem amet.",
   },
 ];
 
@@ -26,7 +26,8 @@ const FeatureCard = () => {
   return (
     <section
       style={{
-        background: 'linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253))',
+        background:
+          "linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253))",
       }}
     >
       <div className="container py-5">

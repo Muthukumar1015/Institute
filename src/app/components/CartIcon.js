@@ -13,7 +13,7 @@ const CartIcon = () => {
       const targetTop = window.scrollY + window.innerHeight - 150;
 
       // Smooth slow animation
-      currentTop += (targetTop - currentTop) * 0.05;
+      currentTop += (targetTop - currentTop) * 0.005;
 
       if (iconRef.current) {
         iconRef.current.style.top = `${currentTop}px`;
@@ -39,7 +39,7 @@ const CartIcon = () => {
             title="Go to cart"
           >
             <FiShoppingCart size={24} />
-            {itemCount > 0 && <span className="item-count">{itemCount}</span>}
+            
           </div>
         </div>
       </div>
@@ -84,17 +84,7 @@ const CartIcon = () => {
           z-index: 1;
         }
 
-        .item-count {
-          position: absolute;
-          top: -6px;
-          right: -6px;
-          background-color: #ff4b2b;
-          color: #fff;
-          font-size: 12px;
-          padding: 2px 6px;
-          border-radius: 999px;
-          font-weight: bold;
-        }
+       
       `}</style>
     </>
   );
