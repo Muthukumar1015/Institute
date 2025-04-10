@@ -21,9 +21,9 @@ export default function Footer() {
           {/* Logo and About */}
           <div className="col-md-3">
             <div className="d-flex align-items-center mb-3">
-              <img src="/images/edison-logo.png" alt="Edison Logo" width={40} height={40} />
+              <img src="/images/deva.png" alt="Edison Logo" width={40} height={40} />
               <div className="ms-2">
-                <h5 className="m-0 fw-bold">edison</h5>
+                <h5 className="m-0 fw-bold">Deva</h5>
                 <small>courses</small>
               </div>
             </div>
