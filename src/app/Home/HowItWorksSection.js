@@ -10,7 +10,7 @@ const HowItWorksSection = () => {
           <div className="col-lg-11 position-relative">
             {/* Gradient Box */}
             <div className="gradient-box position-relative rounded-4 shadow-lg p-4 p-lg-5">
-              {/* Ribbon inside top-right of gradient box */}
+              {/* Ribbon */}
               <div className="ribbon-image position-absolute">
                 <Image
                   src="/images/ribbon.png"
@@ -21,7 +21,6 @@ const HowItWorksSection = () => {
               </div>
 
               <div className="row">
-                {/* Left: Bullet Points */}
                 <div className="col-lg-7 text-white">
                   <h2 className="fw-bold mb-4">How does it work?</h2>
 
@@ -52,8 +51,8 @@ const HowItWorksSection = () => {
               </div>
             </div>
 
-            {/* White Testimonial Card */}
-            <div className="testimonial-card bg-white text-center p-4 p-lg-5 rounded-4 shadow-lg position-absolute">
+            {/* Testimonial Card */}
+            <div className="testimonial-card bg-white text-center p-4 p-lg-5 rounded-4 shadow-lg">
               <Image
                 src="/images/diana.webp"
                 alt="Diana Gloster"
@@ -79,13 +78,12 @@ const HowItWorksSection = () => {
       <style jsx>{`
         .how-it-works-section {
           background: linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253));
-          overflow: hidden;
         }
 
         .gradient-box {
           background: linear-gradient(135deg, #6d00b3, #2979ff);
           position: relative;
-          padding-bottom: 120px;
+          padding-bottom: 160px; /* For space under testimonial on desktop */
         }
 
         .ribbon-image {
@@ -104,47 +102,48 @@ const HowItWorksSection = () => {
         }
 
         .testimonial-card {
+          position: absolute;
           bottom: -90px;
           right: 40px;
           max-width: 360px;
+          z-index: 2;
         }
 
-      @media (max-width: 768px) {
-  .testimonial-card {
-    position: static;
-    margin-top: 2rem;
-    max-width: 100%;
-    padding: 1.5rem;
-  }
+        @media (max-width: 768px) {
+          .gradient-box {
+            padding: 2rem 1.5rem 2rem;
+          }
 
-  .ribbon-image {
-    top: -10px;
-    right: 0;
-    width: 100px !important;
-    height: auto !important;
-  }
+          .testimonial-card {
+            position: static;
+            margin-top: 2.5rem;
+            max-width: 100%;
+            padding: 1.5rem;
+          }
 
-  .gradient-box {
-    padding: 2rem 1.5rem 3rem;
-  }
+          .ribbon-image {
+            top: -10px;
+            right: 0;
+            width: 100px !important;
+            height: auto !important;
+          }
 
-  .how-it-works-section h2 {
-    font-size: 1.6rem;
-  }
+          .how-it-works-section h2 {
+            font-size: 1.6rem;
+          }
 
-  .how-it-works-section h5 {
-    font-size: 1rem;
-  }
+          .how-it-works-section h5 {
+            font-size: 1rem;
+          }
 
-  .how-it-works-section p {
-    font-size: 0.9rem;
-  }
+          .how-it-works-section p {
+            font-size: 0.9rem;
+          }
 
-  .how-it-works-section .text-white {
-    text-align: start;
-  }
-}
-
+          .how-it-works-section .text-white {
+            text-align: start;
+          }
+        }
       `}</style>
     </section>
   );
