@@ -109,17 +109,42 @@ const HowItWorksSection = () => {
           max-width: 360px;
         }
 
-        @media (max-width: 768px) {
-          .testimonial-card {
-            position: static;
-            margin-top: 2rem;
-          }
+      @media (max-width: 768px) {
+  .testimonial-card {
+    position: static;
+    margin-top: 2rem;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
 
-          .ribbon-image {
-            top: -20px;
-            right: 10px;
-          }
-        }
+  .ribbon-image {
+    top: -10px;
+    right: 0;
+    width: 100px !important;
+    height: auto !important;
+  }
+
+  .gradient-box {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .how-it-works-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .how-it-works-section h5 {
+    font-size: 1rem;
+  }
+
+  .how-it-works-section p {
+    font-size: 0.9rem;
+  }
+
+  .how-it-works-section .text-white {
+    text-align: start;
+  }
+}
+
       `}</style>
     </section>
   );
