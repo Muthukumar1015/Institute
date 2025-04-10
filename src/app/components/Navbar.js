@@ -53,20 +53,26 @@ export default function Navbar() {
               <Link className="nav-link" href="/">Home</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                All Courses
-              </a>
-              <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" href="/courses/web">Web Development</Link></li>
-                <li><Link className="dropdown-item" href="/courses/uiux">UI/UX Design</Link></li>
-                <li><Link className="dropdown-item" href="/courses/python">Python</Link></li>
-              </ul>
-            </li>
+            <Link href="/AllCoursesHero" className="nav-link">
+    All Courses
+  </Link>
+
+  <ul className="dropdown-menu">
+    <li>
+      <Link className="dropdown-item" href="/courses/web">
+        Course Describition
+      </Link>
+    </li>
+    {/* Add more dropdown items as needed */}
+  </ul>
+</li>
+
+<li className="nav-item">
+  <Link className="nav-link" href="/About">About Us</Link>
+</li>
+
             <li className="nav-item">
-              <Link className="nav-link" href="/about">About Us</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/pricing">Prices</Link>
+              <Link className="nav-link" href="/Price">Prices</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
