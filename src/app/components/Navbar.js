@@ -1,23 +1,40 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap.bundle.min.js');
+
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white border-bottom shadow-sm py-3">
+    <nav
+      className={`navbar navbar-expand-lg border-bottom shadow-sm py-3 sticky-top ${
+        scrolled ? 'navbar-scrolled' : 'bg-white'
+      }`}
+    >
       <div className="container">
-        {/* Just the logo */}
+        {/* Logo */}
         <Link className="navbar-brand d-flex align-items-center" href="/">
           <Image
-            src="/images/deva.png" // keep this in your public folder
+            src="/images/deva.png"
             alt="Company Logo"
             width={100}
-            height={50}
+            height={40}
           />
         </Link>
 

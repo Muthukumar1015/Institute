@@ -1,7 +1,5 @@
 /* Global card style */
-.card {
-  background: linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253));
-
-  border-radius: 1.25rem; /* same as rounded-4 */
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+.navbar-scrolled {
+  background: linear-gradient(90deg, rgb(219, 198, 248), rgb(217, 230, 253)) !important;
+  transition: background 0.3s ease-in-out;
 }

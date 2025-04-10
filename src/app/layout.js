@@ -1,6 +1,7 @@
 // app/layout.js
 import Navbar from '@/app/components/Navbar';
 import CartIcon from '@/app/components/CartIcon'; // Import the cart icon
+import Footer from '@/app/components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 
@@ -14,8 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        <CartIcon /> {/* Always visible on scroll */}
+        <CartIcon />
         {children}
+        <Footer /> {/* Imported footer added here */}
       </body>
     </html>
   );

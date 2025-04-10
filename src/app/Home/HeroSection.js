@@ -5,6 +5,7 @@ import FeatureCard from "@/app/Home/FeatureCard";
 import Profession from "./profession";
 import HowItWorksSection from "./HowItWorksSection";
 import PopularCourses from "./PopularCourses";
+import SubscriptionBanner from "./SubscriptionBanner";
 
 
 
@@ -66,11 +67,12 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/* 👉 Add FeatureCard after hero */}
+      {/* 👉 Add Section after hero */}
       <FeatureCard />
       <Profession />
       <HowItWorksSection />
       <PopularCourses />
+      <SubscriptionBanner />
     </>
   );
 };

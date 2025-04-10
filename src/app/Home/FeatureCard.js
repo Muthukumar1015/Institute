@@ -52,7 +52,7 @@ const FeatureCard = () => {
         }
 
         .feature-card .icon-box {
-          background: linear-gradient(135deg, #6f42c1, #3f51b5);
+          background: linear-gradient(135deg,rgb(114, 47, 239),rgb(91, 114, 244));
           color: white;
           width: 60px;
           height: 60px;

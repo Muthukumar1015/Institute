@@ -13,7 +13,7 @@ const CartIcon = () => {
       const targetTop = window.scrollY + window.innerHeight - 150;
 
       // Smooth slow animation
-      currentTop += (targetTop - currentTop) * 0.005;
+      currentTop += (targetTop - currentTop) * 0.009;
 
       if (iconRef.current) {
         iconRef.current.style.top = `${currentTop}px`;
