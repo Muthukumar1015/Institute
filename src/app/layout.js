@@ -1,7 +1,8 @@
 // app/layout.js
 import Navbar from '@/app/components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import './globals.css'; // Optional: your custom global styles
+import CartIcon from '@/app/components/CartIcon'; // Import the cart icon
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './globals.css';
 
 export const metadata = {
   title: 'Deva Courses',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
+        <CartIcon /> {/* Always visible on scroll */}
         {children}
       </body>
     </html>
